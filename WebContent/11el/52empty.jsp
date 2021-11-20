@@ -2,17 +2,14 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
 <% request.setCharacterEncoding("utf-8"); %>
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="<%= request.getContextPath() %>/resource/css/icon/css/all.css">
-
 <title>Insert title here</title>
 </head>
 <body>
-
 <h1>empty</h1>
 <ul>
 	<li>null이면 true</li>
@@ -57,7 +54,6 @@ pageContext.setAttribute("var1", "val1");
 <p>${empty var2 }</p>
 
 <hr>
-
 <h1>값이 있는 지 확인하고 싶을때는 not empty or ! empty</h1>
 
 </body>

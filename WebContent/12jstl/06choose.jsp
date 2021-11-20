@@ -20,11 +20,13 @@
      그렇지 않으면 투표 불가능. --%>
 
 <c:choose>
-	<c:when>
-		c:
+	<c:when test="${param.age >= 20 }">
+		<p>투표 가능합니다.</p>
 	</c:when>
+	<c:otherwise>
+		<p>투표 불가능합니다.</p>
+	</c:otherwise>
 </c:choose>
-	<c:wnen></c:wnen>
 
 </body>
 </html>

@@ -14,9 +14,11 @@
 </head>
 <body>
 
-<h1>jstl core if 연</h1>
+<h1>jstl core if 연습</h1>
 
-<c:if test=${param,intl, 31 }></c:if>
+<c:if test="${param.food eq 'apple' }">
+	<p>사과</p>
+</c:if>
 
 </body>
 </html>

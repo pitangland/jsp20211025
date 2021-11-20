@@ -18,8 +18,7 @@
 
 <c:choose>
 	<c:when test="${empty param.name }">
-		<p>손님 반갑습니다.
-		</p>
+		<p>손님 반갑습니다.</p>
 	</c:when>
 	<c:otherwise>
 		<p>${param.name }님 반갑습니다.</p>

@@ -15,6 +15,11 @@
 
 <h1>15forward-to-el.jsp</h1>
 
+<%--
+${bean1.setName("jeju") }
+사용 가능하다.
+ --%>
+
 <p>name : ${bean1.name }</p>
 <p>age : ${bean1.age }</p>
 <p>kid : ${bean1.kid }</p>

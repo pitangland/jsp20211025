@@ -9,6 +9,7 @@ Bean03 obj1 = new Bean03();
 obj1.setName("korea");
 obj1.setAge(30000);
 obj1.setKid(false);
+
 request.setAttribute("bean1", obj1);
 %>
 
