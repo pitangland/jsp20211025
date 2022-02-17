@@ -11,6 +11,7 @@
   </welcome-file-list>
   
   <!-- ServletContextListener 설정 -->
+  <!-- 
   <listener>
   	<listener-class>listener01.AppListener03</listener-class>
   </listener>
@@ -22,6 +23,7 @@
   <listener>
   	<listener-class>listener01.AppListener05</listener-class>
   </listener>
+   -->
   
   <!-- 세션 설정 -->
   <session-config>
@@ -30,6 +32,7 @@
   </session-config>
   
   <!-- 서블릿 설정 -->
+  <!-- 
   <servlet>
   	<servlet-name>servlet0103</servlet-name>
   	<servlet-class>servlet01.S03Servlet</servlet-class>
@@ -47,8 +50,10 @@
   	<servlet-name>servlet0104</servlet-name>
   	<url-pattern>/servlet01/servlet04</url-pattern>
   </servlet-mapping>
+   -->
   
   <!-- 필터 설정 -->
+  <!-- 
   <filter>
   	<filter-name>f03filter</filter-name>
   	<filter-class>filter01.F03Filter</filter-class>
@@ -121,8 +126,10 @@
   	<filter-name>f10filter</filter-name>
   	<url-pattern>/filterex4/member</url-pattern>
   </filter-mapping>
+   -->
   
   <!-- Book App Character Encoding Filter -->
+  <!-- 
   <filter>
   	<filter-name>BookCharEncodingFilter</filter-name>
   	<filter-class>servlet08.S01BookCharEncodingFilter</filter-class>
@@ -131,5 +138,6 @@
   	<filter-name>BookCharEncodingFilter</filter-name>
   	<url-pattern>/servlet08/*</url-pattern>
   </filter-mapping>
+   -->
   
 </web-app>

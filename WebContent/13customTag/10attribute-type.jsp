@@ -25,7 +25,7 @@ pageContext.setAttribute("pageAttr2", 300);
 %>
 
 <my:t10 attr1="hello"></my:t10>
-<my:t10 attr2="${pagaeAttr1 }"></my:t10>
+<my:t10 attr2="${pageAttr1 }"></my:t10>
 <my:t10 attr3="${pageAttr2 }"></my:t10>
 <my:t10 attr4="400"></my:t10>
 <%-- 익셉션 발생.

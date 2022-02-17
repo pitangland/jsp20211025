@@ -16,54 +16,58 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/servlet05/s01")
 public class S01RequestServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public S01RequestServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//2. request 분석, request parameter 처리/가공
-		String param = request.getParameter("info");
-		
-		//3. business logic
-		List<String> list = new ArrayList<>();
-		String title = "";
-		
-		if (param.equals("travle")) {
-			//여행 관련된 일
-			list.add("seoul");
-			list.add("paris");
-			
-			title = "여행가고 싶은 곳";
-		} else if (param.equals("food")) {
-			//음식 관련된 일
-			list.add("pizza");
-			list.add("icecream");
-			
-			title = "좋아하는 음식";
-		} 
-		
-		//4. set attribute
-		request.setAttribute("title", title);
-		request.setAttribute("list", list);
-		
-		//5. forward
-		String path = "/WEB-INF/view/servlet05/s01.jsp";
-		request.getRequestDispatcher(path).forward(request, response); 
-		
+	public S01RequestServlet() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// 2. request 분석, request parameter 처리/가공
+		String param = request.getParameter("info");
+
+		// 3. business logic
+		List<String> list = new ArrayList<>();
+		String title = "";
+
+		if (param.equals("travel")) {
+			// 여행 관련된 일
+			list.add("seoul");
+			list.add("paris");
+
+			title = "여행가고 싶은 곳";
+		} else if (param.equals("food")) {
+			// 음식 관련된 일
+			list.add("pizza");
+			list.add("icecream");
+
+			title = "좋아하는 음식";
+		}
+
+		// 4. set attribute
+		request.setAttribute("title", title);
+		request.setAttribute("list", list);
+
+		// 5. forward
+		String path = "/WEB-INF/view/servlet05/s01.jsp";
+		request.getRequestDispatcher(path).forward(request, response);
+
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}

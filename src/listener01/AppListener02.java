@@ -8,7 +8,7 @@ import javax.servlet.annotation.WebListener;
  * Application Lifecycle Listener implementation class AppListener02
  *
  */
-@WebListener
+//@WebListener 잠깐 주석처리.
 public class AppListener02 implements ServletContextListener {
 
     /**

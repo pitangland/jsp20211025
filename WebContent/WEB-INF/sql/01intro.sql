@@ -23,4 +23,4 @@ SELECT * FROM OrderDetails;
 SELECT * FROM Orders;
 SELECT * FROM Products;
 SELECT * FROM Shippers;
-SELECT * FROM Suppliers;
+SELECT * FROM Suppliers; 
